@@ -1,11 +1,12 @@
 # 42chicago.py by mohammed
 
 import random
+import sys
 
 games = 1000000
-log = games // 100
+log = games // 100 # reports progress at 1% intervals
 total = 0
-zeroes = 0
+zeroes = 0 # keeps track of fails
 for i in range(games):
     if 1 % log == 0: print(f'{100 * i/games:.0f}')
     score = 0
